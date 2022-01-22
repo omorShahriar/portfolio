@@ -1,0 +1,11 @@
+.hero {
+  clip-path: url(#svgClip);
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  display: block;
+  @media screen and (max-width: 767px) {
+    width: 14em;
+    height: 14em;
+  }
+}
