@@ -4,12 +4,11 @@ import { FaGithubAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import Link from "next/link";
 const BrandLink = () => (
-  <a
-    href="/"
-    className="font-black tracking-wide uppercase md:text-2xl text-xl text-slate-50 bg-gradient-to-r bg-clip-text transition-all hover:text-transparent from-themePurple  via-themeRed-default to-themeRed-light "
-  >
-    Omor Shahriar
-  </a>
+  <Link href="/">
+    <a className="font-black tracking-wide uppercase md:text-2xl text-xl text-slate-50 bg-gradient-to-r bg-clip-text transition-all hover:text-transparent from-themePurple  via-themeRed-default to-themeRed-light ">
+      Omor Shahriar
+    </a>
+  </Link>
 );
 const BreadCrumb = ({ onClick }) => (
   <button
