@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 export default function Skills() {
   return (
-    <div className="text-slate-50 grid xl:grid-cols-6 md:grid-cols-2 gap-8">
+    <div className="text-slate-50 grid xl:grid-cols-4 xl:gap-12 md:grid-cols-2 gap-8">
       <SkillCard
         icon="FaUikit"
         skillDetails={{
