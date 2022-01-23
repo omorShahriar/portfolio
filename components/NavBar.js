@@ -58,45 +58,47 @@ const NavBar = () => {
     config: config.gentle,
   });
   return (
-    <nav className="fixed top-0 w-full z-40 backdrop-blur-md border-b-themeGrey-light border-b-2 ">
-      <div className=" container px-2 pt-6 pb-2  items-center  flex flex-wrap justify-between mx-auto">
-        <BrandLink />
-        <NavList>
-          <NavItem>
-            <NavLink href="#work">Work</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#skills">Skills</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#about-me">About Me</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#contact">Contact</NavLink>
-          </NavItem>
-        </NavList>
-        <SocialLinks>
-          <SocialLink href="https://www.facebook.com">
-            <FaGithubAlt />
-          </SocialLink>
-          <SocialLink href="https://www.facebook.com">
-            <FaFacebookF />
-          </SocialLink>
-          <SocialLink href="https://www.facebook.com">
-            <FaLinkedinIn />
-          </SocialLink>
-        </SocialLinks>
-        <BreadCrumb onClick={setMenuOpen} />
-      </div>
+    <>
+      <nav className="fixed top-0 w-full z-40 backdrop-blur-md border-b-themeGrey-light border-b-2 ">
+        <div className=" container px-2 pt-6 pb-2  items-center  flex flex-wrap justify-between mx-auto">
+          <BrandLink />
+          <NavList>
+            <NavItem>
+              <NavLink href="#work">Work</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#skills">Skills</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#about-me">About Me</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contact">Contact</NavLink>
+            </NavItem>
+          </NavList>
+          <SocialLinks>
+            <SocialLink href="https://www.facebook.com">
+              <FaGithubAlt />
+            </SocialLink>
+            <SocialLink href="https://www.facebook.com">
+              <FaFacebookF />
+            </SocialLink>
+            <SocialLink href="https://www.facebook.com">
+              <FaLinkedinIn />
+            </SocialLink>
+          </SocialLinks>
+          <BreadCrumb onClick={setMenuOpen} />
+        </div>
+      </nav>
       {transitions(
         (styles, item) =>
           item && (
             <animated.aside
-              className="fixed right-0 top-0   z-50 backdrop-blur-md  h-screen  w-48  "
+              className="fixed right-0 top-0  z-40 backdrop-blur-md  h-screen  w-48  "
               style={styles}
             >
               {" "}
-              <div className=" h-screen flex flex-col justify-between py-6 px-2  bg-themeGrey-light/80 w-full  ">
+              <div className=" h-screen flex flex-col justify-between py-6 px-2 backdrop-blur-md  bg-themeGrey-light/80 w-full  ">
                 <button
                   onClick={() => setMenuOpen(!menuOpen)}
                   className="text-slate-50 text-3xl max-w-fit "
@@ -133,7 +135,7 @@ const NavBar = () => {
             </animated.aside>
           )
       )}
-    </nav>
+    </>
   );
 };
 
