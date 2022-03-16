@@ -72,13 +72,25 @@ const NavBar = () => {
             </NavItem>
           </NavList>
           <SocialLinks>
-            <SocialLink href="https://www.facebook.com">
+            <SocialLink
+              href="https://github.com/omorShahriar"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithubAlt />
             </SocialLink>
-            <SocialLink href="https://www.facebook.com">
+            <SocialLink
+              href="https://www.facebook.com/omor.shahriar"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebookF />
             </SocialLink>
-            <SocialLink href="https://www.facebook.com">
+            <SocialLink
+              href="https://www.linkedin.com/in/omor-shahriar/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedinIn />
             </SocialLink>
           </SocialLinks>

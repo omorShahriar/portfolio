@@ -1,6 +1,6 @@
+import Head from "next/head";
 import {
   Footer,
-  Form,
   Hero,
   NavBar,
   Projects,
@@ -12,6 +12,9 @@ import {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Omor&apos;s Portfolio</title>
+      </Head>
       <NavBar />
       <Hero />
       <div className="snap-y">
@@ -41,10 +44,7 @@ export default function Home() {
         </div>
         <div id="contact" className="snap-start">
           <Section title="get in touch">
-            <div className="flex gap-48 gap-y-24 md:gap-y-12 flex-wrap justify-center md:justify-start">
-              <Form />
-              <ReachOutBox />
-            </div>
+            <ReachOutBox />
           </Section>
         </div>
       </div>
